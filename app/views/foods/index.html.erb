@@ -1,1 +1,28 @@
 <h1>Food List</h1>
+<%= link_to "Add Food", new_user_food_path(@user), class: "button" %>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Measurement Unit</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @foods.each do |food| %>
+      <tr>
+        <td><%= food.name %></td>
+        <td><%= food.measurement_unit %></td>
+        <td><%= food.price %></td>
+        <td><%= food.quantity %></td>
+        <% if current_user.id == food.user_id %>
+          <td>
+            <%= button_to "Delete", user_food_path(@user, food), method: :delete, data: { confirm: "Are you sure?" } %>
+          </td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
