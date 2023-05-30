@@ -84,3 +84,4 @@ production:
   database: Recipe_app_ROR_production
   username: Recipe_app_ROR
   password: <%= ENV["RECIPE_APP_ROR_DATABASE_PASSWORD"] %>
+  
