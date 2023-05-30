@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
+ login-and-registration
   root to: "foods#index"
   
   resources :users, only: [:index, :show]  do
@@ -12,4 +13,8 @@ Rails.application.routes.draw do
   end
 
   
+
+    resources :recipe_foods
+  end
+ dev
 end
