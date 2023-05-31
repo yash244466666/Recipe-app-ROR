@@ -16,7 +16,7 @@ class FoodsController < ApplicationController
   def new
     @food = Food.new
   end
-  
+
   def create
     @food = Food.new(food_params)
     @food.user_id = current_user.id
