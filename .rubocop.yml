@@ -1,4 +1,4 @@
-AllCops:
+gitAllCops:
   NewCops: enable
   Exclude:
     - 'db/**/*'
