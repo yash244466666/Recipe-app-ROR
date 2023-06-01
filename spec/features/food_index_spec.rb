@@ -1,4 +1,3 @@
-
 require_relative '../rails_helper'
 
 RSpec.describe 'The page index page', type: :feature do
