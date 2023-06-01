@@ -94,7 +94,7 @@ To run the project, execute the following command:
 
 ### Run tests
 
-- Run `rspec` to run the tests
+- Run `rspec` to run the tests suit depending on the versrion of activesupport you have you might need to run `bundle exec rspec`
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
